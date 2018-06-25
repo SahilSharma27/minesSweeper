@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.minesweeper.MainActivity">
+    tools:context="com.example.android.minesweeper.MainActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:gravity="center">
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/mine1"
+        />
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/mine1"
+        />
+       <ImageView
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           android:src="@drawable/mine1"
+           />
+       <ImageView
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           android:src="@drawable/mine1"
+           />
+</LinearLayout>
 
-    <TextView
+<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="MineSweeper"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="#000000"
+        android:paddingBottom="50dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/crosseye"
+            android:layout_weight="1"/>
 
-</android.support.constraint.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <RadioButton
+            android:textStyle="italic"
+            android:id="@+id/beginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner"/>
+        <RadioButton
+            android:id="@+id/normal"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"/>
+        <RadioButton
+            android:id="@+id/hard"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"/>
+    </RadioGroup>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/simley"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Play"
+        android:textStyle="bold"
+        android:onClick="startMain2Activity"/>
+
+
+
+
+
+</LinearLayout>
