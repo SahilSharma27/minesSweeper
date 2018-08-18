@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
     public void startMain2Activity(View view){
 
         String level=((RadioButton)findViewById(rg.getCheckedRadioButtonId())).getText().toString();
-        Toast.makeText(this,level,Toast.LENGTH_LONG).show();
-       Intent intent=new Intent(this,Main2Activity.class);
+     //   Toast.makeText(this,level,Toast.LENGTH_LONG).show();
+        Intent intent=new Intent(this,Main2Activity.class);
         intent.putExtra(DIFFICULTY,level);
         startActivity(intent);
 
